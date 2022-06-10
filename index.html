@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -61,6 +60,44 @@
 		.fs-20 {
 			font-size: 20px;
 		}
+
+		.text-title {
+			font-size: 24px;
+		}
+
+		.text-text {
+			font-size: 16px;
+			opacity: 75%;
+		}
+
+		.border-img {
+			border-radius: 8px;
+		}
+
+		.quad {
+			background: #1E1B27;
+			border-radius: 8px;
+			height: 150px;
+			width: 150px;
+		}
+
+		.rect {
+			background: #1E1B27;
+			border-radius: 8px;
+		}
+
+		.text-pohui {
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 32px;
+			/* or 133% */
+
+			text-align: center;
+
+			color: rgba(255, 255, 255, 0.8);
+		}
 	</style>
 </head>
 
@@ -89,7 +126,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+
+		<!-- First -->
+		<div class="row panel">
 			<div class="col-8 mx-auto pt-5" style="height: 90vh">
 				<div class="row">
 					<div class="col-7 pt-3">
@@ -107,7 +146,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+
+		<!-- Услуги -->
+		<div class="row panel">
 			<div class="col-8 mx-auto h-100">
 				<h1 class="text-light" style="font-family: inter-b; font-size: 40px; line-height: 74px;">Услуги</h1>
 				<div class="row mt-4">
@@ -199,8 +240,8 @@
 			</div>
 		</div>
 
-
-		<div class="row">
+		<!-- Кейсы -->
+		<div class="row panel">
 			<div class="col-8 mx-auto mt-5 h-100">
 				<div class="row">
 					<div class="col">
@@ -208,74 +249,241 @@
 							<h1 class="text-light" style="font-family: inter-b; font-size: 40px; line-height: 74px;">
 								Кейсы</h1>
 						</div>
-						<div class="row mt-4" style="height: 38vh; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+						<div class="row mb-2"
+							style="height: 32vh; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
 							<div class="col-5">
-								<img src="img/Rectangle 76.png" class="w-100"
-									style="height: 38vh; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+								<div class="row h-100">
+									<img src="img/Rectangle 76.png" class="w-100 my-auto"
+										style="height: 30vh; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+								</div>
 							</div>
 
 							<div class="col">
-								<img src="img/vtb.svg" style="height: 3.5vh" class="mt-4">
-								<p class="text-light mt-3 fs-20" style="font-family: inter-b;">Маркетплейс билетов на
+								<img src="img/vtb.svg" style="height: 2.5vh" class="mt-4">
+								<p class="text-light mt-3 fs-20" style="font-family: inter-b;font-size: 15px;">
+									Маркетплейс билетов на
 									мероприятия</p>
-								<p class="text-light text text-m mt-8">Дизайн интерфейса / Адаптивная вёрстка</p>
-								<p class="text-light text text-m mt-8">Проектирование архитектуры БД</p>
-								<p class="text-light text text-m mt-8">Разработка витрины, модуля арены, модуля
-									внутренней
-									аналитики, личных</p>
+								<p class="text-light text text-m mt-8" style="font-size: 12px;">Дизайн интерфейса /
+									Адаптивная вёрстка</p>
+								<p class="text-light text text-m mt-8" style="font-size: 12px;">Проектирование
+									архитектуры БД</p>
+								<p class="text-light text text-m mt-8" style="font-size: 12px;">Разработка витрины,
+									модуля арены, модуля
+									внутренней аналитики, личных</p>
+								<div class="row">
+									<button class="btn bg-none border-light text-light ms-3 text-m text w-50"
+										style=" border-radius: 5px;">Посмотреть кейс</button>
+								</div>
 							</div>
 						</div>
-						
-						<div class="row mt-4" style="height: 38vh; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+						<div class="row mb-2"
+							style="height: 32vh; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
 							<div class="col-5">
-								<img src="img/Rectangle 76.png" class="w-100"
-									style="height: 38vh; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+								<div class="row h-100">
+									<img src="img/Rectangle 76.png" class="w-100 my-auto"
+										style="height: 30vh; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+								</div>
 							</div>
 
 							<div class="col">
-								<img src="img/vtb.svg" style="height: 3.5vh" class="mt-4">
-								<p class="text-light mt-3 fs-20" style="font-family: inter-b;">Маркетплейс билетов на
+								<img src="img/vtb.svg" style="height: 2.5vh" class="mt-4">
+								<p class="text-light mt-3 fs-20" style="font-family: inter-b;font-size: 15px;">
+									Маркетплейс билетов на
 									мероприятия</p>
-								<p class="text-light text text-m mt-8">Дизайн интерфейса / Адаптивная вёрстка</p>
-								<p class="text-light text text-m mt-8">Проектирование архитектуры БД</p>
-								<p class="text-light text text-m mt-8">Разработка витрины, модуля арены, модуля
-									внутренней
-									аналитики, личных</p>
+								<p class="text-light text text-m mt-8" style="font-size: 12px;">Дизайн интерфейса /
+									Адаптивная вёрстка</p>
+								<p class="text-light text text-m mt-8" style="font-size: 12px;">Проектирование
+									архитектуры БД</p>
+								<p class="text-light text text-m mt-8" style="font-size: 12px;">Разработка витрины,
+									модуля арены, модуля
+									внутренней аналитики, личных</p>
+								<div class="row">
+									<button class="btn bg-none border-light text-light ms-3 text-m text w-50"
+										style=" border-radius: 5px;">Посмотреть кейс</button>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<button class="btn bg-none border-light text-light text-m text w-100"
+								style=" border-radius: 5px;">Остальные работы</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- О нас -->
+		<div class="row panel">
+			<div class="col-8 mx-auto">
+				<div class="row mt-3">
+					<h1 class="text-light"
+						style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
+						О нас</h1>
+				</div>
+				<div class="row h-75">
+					<div class="col my-auto">
+						<div class="row">
+							<div class="col">
+								<div class="row">
+									<img src="img/Rectangle 83.png" alt="Мы" class="border-img">
+								</div>
+							</div>
+							<div class="col">
+								<div class="mx-auto" style="width:80%">
+									<div class="row mb-5">
+										<div class="quad mx-auto">
+											<div class="row h-100">
+												<div class="col my-auto">
+													<div class="row text-center">
+														<h1 class="text-light mx-auto"
+															style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
+															600
+														</h1>
+													</div>
+													<div class="row">
+														<p class="text-light text text-m mt-8 mx-auto text-center"
+															style="font-size: 12px;">Проектов завершено</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quad mx-auto">
+											<div class="row h-100">
+												<div class="col my-auto">
+													<div class="row text-center">
+														<h1 class="text-light mx-auto"
+															style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
+															600
+														</h1>
+													</div>
+													<div class="row">
+														<p class="text-light text text-m mt-8 mx-auto text-center"
+															style="font-size: 12px;">Проектов завершено</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="quad mx-auto">
+											<div class="row h-100">
+												<div class="col my-auto">
+													<div class="row text-center">
+														<h1 class="text-light mx-auto"
+															style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
+															600
+														</h1>
+													</div>
+													<div class="row">
+														<p class="text-light text text-m mt-8 mx-auto text-center"
+															style="font-size: 12px;">Проектов завершено</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="quad mx-auto">
+											<div class="row h-100">
+												<div class="col my-auto">
+													<div class="row text-center">
+														<h1 class="text-light mx-auto"
+															style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
+															600
+														</h1>
+													</div>
+													<div class="row">
+														<p class="text-light text text-m mt-8 mx-auto text-center"
+															style="font-size: 12px;">Проектов завершено</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Контакты -->
+		<div class="row panel">
+			<div class="col-8 mx-auto">
+				<div class="row">
+					<h1 class="text-light"
+						style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
+						Контакты</h1>
+				</div>
+				<div class="row rect h-75 mt-5">
+					<div class="col my-auto">
+						<div class="row h-100">
+							<div class="col h-100">
+								<div class="row my-2">
+									<h1 class="text-light mx-auto"
+										style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
+										Оставьте заявку
+									</h1>
+								</div>
+								<div class="row">
+									<p class="text-pohui mt-8 mx-auto text-center w-50">Расскажите о проекте и задайте
+										вопросы — мы скоро ответим</p>
+								</div>
+								<div class="row">
+									<button class="btn bg-light text-m text w-25 mx-auto"
+										style=" border-radius: 5px;">Отправить заявку</button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-8 mx-auto mt-5" style="height: 60vh">
-				<div class="row">
-					<div class="col-4">
-						<img src="img/logo.svg" class="col-3">
-						<p class="text-light text mt-3 fs-20" style="font-family: inter;">Адрес:</p>
-						<p class="text-light text text-m mt-13">Якутск, просп. Ленина, 1, офис 512</p>
-						<p class="text-light text mt-3 fs-20" style="font-family: inter;">Контакты:</p>
-						<p class="text-light text text-m mt-13">+7 (984) 104-11-05</p>
-						<p class="text-light text text-m mt-13">foxx_remix@mail.ru</p>
-					</div>
-					<div class="col-5 ms-5">
-						<img src="img/karta.svg" class="col-12">
-					</div>
-					<div class="col-2 ms-3">
-						<p class="text-light text fs-20" style="font-family: inter;">Карта сайта</p>
-						<p class="text-light text text-m mt-13">Link 1</p>
-						<p class="text-light text text-m mt-13">Link 2</p>
-						<p class="text-light text text-m mt-13">Link 3</p>
-						<p class="text-light text text-m mt-13">Link 4</p>
-						<p class="text-light text text-m mt-13">Link 5</p>
+
+		<!-- Связь с нами -->
+		<div class="row panel">
+			<div class="col h-100">
+				<div class="row h-100">
+					<div class="col-8 my-auto mx-auto" style="height: 60vh">
+						<div class="row">
+							<div class="col-4">
+								<h1 class="text-light"
+									style="font-family: inter-b; font-size: 32px; line-height: 74px;">
+									Связь с нами</h1>
+								<p class="text-light text mt-3 fs-20 text-title" style="font-family: inter;">Адрес:</p>
+								<p class="text-light text text-m mt-13 text-text">Якутск, просп. Ленина, 1, офис 512</p>
+								<p class="text-light text mt-3 fs-20 text-title" style="font-family: inter;">Контакты:
+								</p>
+								<p class="text-light text text-m mt-13 text-text">+7 (984) 104-11-05</p>
+								<p class="text-light text text-m mt-13 text-text">foxx_remix@mail.ru</p>
+							</div>
+							<div class="col">
+								<div class="row ">
+									<script type="text/javascript" charset="utf-8" async
+										src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af637c358575144dfc0989adcc44726a1b87e1c1076866dc86c2c028c5a9e764f&amp;width=550&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+									</script>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+	<script src="script/jquery-2.2.1.min.js"></script>
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+	</script>
+	<script src="script/jquery.scrollify.js"></script>
+	<script>
+		$.scrollify({
+			section: ".panel",
+			scrollbars: false,
+			scrollSpeed: 100,
+		})
 	</script>
 </body>
 
