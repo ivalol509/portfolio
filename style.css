@@ -1,0 +1,103 @@
+@font-face {
+	font-family: inter;
+	src: url(font/Inter-Regular.ttf);
+}
+
+@font-face {
+	font-family: inter-b;
+	src: url(font/Inter-Bold.ttf);
+}
+
+@font-face {
+	font-family: inter-m;
+	src: url(font/Inter-Medium.ttf);
+}
+
+.text {
+	text-decoration: none;
+	font-family: inter;
+}
+
+.text-m {
+	font-size: 13px;
+}
+
+.knopki {
+	padding: 1vh 1vw;
+	height: 5vh;
+	background: rgba(255, 255, 255, 0.05);
+	color: rgba(255, 255, 255, 1);
+	border-radius: 5px;
+	outline: none;
+}
+
+.h-9 {
+	height: 9vh;
+}
+
+.h-100 {
+	height: 100vh;
+}
+
+.mt-8 {
+	margin-top: -8px;
+}
+
+.mt-13 {
+	margin-top: -13px;
+}
+
+.fs-20 {
+	font-size: 20px;
+}
+
+.text-title {
+	font-size: 24px;
+}
+
+.text-text {
+	font-size: 16px;
+	opacity: 75%;
+}
+
+.border-img {
+	border-radius: 8px;
+}
+
+.quad {
+	background: #1E1B27;
+	border-radius: 8px;
+	height: 150px;
+	width: 150px;
+}
+
+.rect {
+	background: #1E1B27;
+	border-radius: 8px;
+}
+
+.text-pohui {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+	/* or 133% */
+
+	text-align: center;
+
+	color: rgba(255, 255, 255, 0.8);
+}
+.inp{
+	outline: none; 
+	background: none; 
+	border-width: 1px; 
+	border-radius: 5px; 
+	border-color: white;
+}
+input[type="file"] {
+    text-decoration: none;
+	font-family: inter;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.6);
+}
