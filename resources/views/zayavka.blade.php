@@ -50,6 +50,8 @@
 					</div>
 				</div>
 			</div>
+            <form method="post" action="{{ route('send.email') }}" enctype="multipart/form-data">
+                @csrf
 			<div class="col-8 mx-auto">
 				<div class="row">
 					<div class="col-12">
@@ -59,11 +61,11 @@
 						<div class="row">
 							<div class="col-6">
 								<p class="text text-light text-m">Ваше имя</p>
-								<input type="" name="" class="input w-100 text-light inp" style="height: 4.5vh;">
+								<input type="" name="name" class="input w-100 text-light inp" style="height: 4.5vh;">
 							</div>
 							<div class="col-6">
 								<p class="text text-light text-m">Номер телефона</p>
-								<input type="" name="" class="input w-100 text-light inp" style="height: 4.5vh;">
+								<input type="" name="phone" class="input w-100 text-light inp" style="height: 4.5vh;">
 							</div>
 						</div>
 					</div>
@@ -71,11 +73,11 @@
 						<div class="row">
 							<div class="col-6">
 								<p class="text text-light text-m">Название компании</p>
-								<input type="" name="" class="input w-100 text-light inp" style="height: 4.5vh;">
+								<input type="" name="companyName" class="input w-100 text-light inp" style="height: 4.5vh;">
 							</div>
 							<div class="col-6">
 								<p class="text text-light text-m">Сфера бизнеса</p>
-								<input type="" name="" class="input w-100 text-light inp" style="height: 4.5vh;">
+								<input type="" name="businessSphere" class="input w-100 text-light inp" style="height: 4.5vh;">
 							</div>
 						</div>
 					</div>
@@ -84,23 +86,23 @@
 					<div class="col-12 mt-4">
 						<p class="text fs-20 text-light">Задача</p>
 					</div>
-					<div class="col-12">
+					<div class="col-12 box">
 						<p class="text text-light text-m">Выберите услугу</p>
-						<button class="text-center btn text-m text knopki mt-1">Разработка сайта</button>
-						<button class="text-center btn text-m text knopki mt-1">Разработка лендинга</button>
-						<button class="text-center btn text-m text knopki mt-1">Разработка интернет-магазина</button>
-						<button class="text-center btn text-m text knopki mt-1">Айдентика и UX-дизайн</button>
-						<button class="text-center btn text-m text knopki mt-1">Разработка корпоративного сайта</button>
+						<button type="button" class="text-center btn text-m text knopki mt-1 btn1">Разработка сайта</button>
+						<button type="button" class="text-center btn text-m text knopki mt-1 btn2">Разработка лендинга</button>
+						<button type="button" class="text-center btn text-m text knopki mt-1 btn3">Разработка интернет-магазина</button>
+						<button type="button" class="text-center btn text-m text knopki mt-1 btn4">Айдентика и UX-дизайн</button>
+						<button type="button" class="text-center btn text-m text knopki mt-1 btn5">Разработка корпоративного сайта</button>
 					</div>
 					<div class="col-12">
 						<div class="row">
 							<div class="col-12 pt-2 mt-3">
 								<p class="text text-light text-m">Прикрепить файл</p>
-								<input placeholder="Выбрать файл" type="file" class="w-100 vibrfile inp" style="height: 4.5vh;">
+								<input placeholder="Выбрать файл" type="file" name="file" class="w-100 vibrfile inp" style="height: 4.5vh;">
 							</div>
 							<div class="col-12">
 								<p class="text text-light text-m">Описание</p>
-								<textarea class="input w-100 text-light inp ps-3" style="height: 15vh; font-size: 13px;" placeholder="Текст"></textarea>
+								<textarea class="input w-100 text-light inp ps-3" name="text" style="height: 15vh; font-size: 13px;" placeholder="Текст"></textarea>
 							</div>
 							<div class="col-12 d-flex" style="height: 5vh; align-items: center;">
 								<img src="img/bx-checkbox-checked.svg"><a class="text text-light text-m">Соглашение на обработку персональных данных</a>
@@ -108,11 +110,13 @@
 						</div>
 					</div>
 					<div class="col-5">
-						<button class="btn bg-light text-m text mt-2" style="border-radius: 5px;">Отправить заявку</button>
+						<button type="submit" class="btn bg-light text-m text mt-2" style="border-radius: 5px;">Отправить заявку</button>
 					</div>
 				</div>
 			</div>
+            </form>
 		</div>
+
 		<
 
 		<!-- Связь с нами -->
@@ -147,5 +151,61 @@
 	</div>
 
 </body>
-
+<script type="text/javascript">
+    var btn1 = document.querySelector('.btn1')
+    var btn2 = document.querySelector('.btn2')
+    var btn3 = document.querySelector('.btn3')
+    var btn4 = document.querySelector('.btn4')
+    var btn5 = document.querySelector('.btn5')
+    btn1.onclick = function(){
+            var box = document.querySelector('.box');
+            var input = document.createElement('input')
+            input.setAttribute("id", "input");
+            input.setAttribute("type", "hidden");
+            input.setAttribute("class", "inputhid");
+            input.setAttribute("name", "benefit");
+            input.setAttribute("value", "Разработка сайта");
+            box.appendChild(input);
+    }
+    btn2.onclick = function(){
+        var box = document.querySelector('.box');
+        var input = document.createElement('input')
+        input.setAttribute("id", "input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("class", "inputhid");
+        input.setAttribute("name", "benefit");
+        input.setAttribute("value", "Разработка лендинга");
+        box.appendChild(input);
+    }
+    btn3.onclick = function(){
+        var box = document.querySelector('.box');
+        var input = document.createElement('input')
+        input.setAttribute("id", "input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("class", "inputhid");
+        input.setAttribute("name", "benefit");
+        input.setAttribute("value", "Разработка интернет-магазина");
+        box.appendChild(input);
+    }
+    btn4.onclick = function(){
+        var box = document.querySelector('.box');
+        var input = document.createElement('input')
+        input.setAttribute("id", "input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("class", "inputhid");
+        input.setAttribute("name", "benefit");
+        input.setAttribute("value", "Андентика и UX - дизайн");
+        box.appendChild(input);
+    }
+    btn5.onclick = function(){
+        var box = document.querySelector('.box');
+        var input = document.createElement('input')
+        input.setAttribute("id", "input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("class", "inputhid");
+        input.setAttribute("name", "benefit");
+        input.setAttribute("value", "Разработка корпоративного сайта");
+        box.appendChild(input);
+    }
+</script>
 </html>
