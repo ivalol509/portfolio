@@ -25,10 +25,23 @@
 .knopki {
 	padding: 1vh 1vw;
 	height: 5vh;
-	background: rgba(255, 255, 255, 0.05);
+	background: #25222E;
 	color: rgba(255, 255, 255, 1);
 	border-radius: 5px;
 	outline: none;
+}
+
+.ds:checked {
+	background-color:black;
+    border-color: black;
+}
+
+.knopki:hover {
+	background-color: rgba(18, 15, 28, 1);
+	border: 1px solid white!important;
+	color: white;
+	transition: 0.2s;
+
 }
 
 .h-9 {
@@ -100,4 +113,15 @@ input[type="file"] {
 	font-family: inter;
 	font-size: 13px;
 	color: rgba(255, 255, 255, 0.6);
+}
+
+.loh {
+	border: 1px solid #FFFFFF;
+	border-radius: 5px !important;
+	background: none;
+	color: white;
+}
+
+.chert {
+	height: 100%!important;
 }

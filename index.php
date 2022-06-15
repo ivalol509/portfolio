@@ -13,28 +13,9 @@
 <body
 	style="height: 200vh; background-image: url('img/fon.svg'); background-color: rgba(18, 15, 28, 1); background-size: 100vw auto; background-repeat: no-repeat;">
 	<div class="container">
-		<div class="row">
-			<div class="col-8 mx-auto">
-				<div class="row">
-					<div class="col-2 d-flex me-2 h-9" style="align-items: center">
-						<img src="img/logo.svg" class="col-8">
-					</div>
-					<div class="col-4 d-flex me-3 h-9" style="align-items: center;">
-						<a href="" class="text-light mx-auto text-m text">Главная</a>
-						<a href="" class="text-light mx-auto text-m text">Услуги</a>
-						<a href="" class="text-light mx-auto text-m text">Кейсы</a>
-						<a href="" class="text-light mx-auto text-m text">О нас</a>
-					</div>
-					<div class="col-5 d-flex ms-5 h-9" style="align-items: center;">
-						<img src="img/logos_whatsapp.svg" style="height: 2.2vh;">
-						<img src="img/logos_telegram.svg" class="ms-1" style="height: 2.2vh;">
-						<a href="" class="text-light ms-1 text-m text">+7 (984) 104-11-05</a>
-						<button class="btn bg-light ms-3 text-m text" style="border-radius: 5px;">Отправить
-							заявку</button>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php
+			include 'header.php';
+		?>
 
 		<!-- First -->
 		<div class="row panel">
@@ -48,8 +29,8 @@
 						<p class="text-light mt-4 text fs-20">Мы — агентство полного цикла. Наши услуги включают
 							маркетинговую стратегию, брендинг, производство рекламных материалов, разработку сайта,
 							поддержку и эффективное привлечение клиентов</p>
-						<a href="zayavka.html"><button class="btn bg-light text-m text" style=" border-radius: 5px;">Отправить заявку</button></a>
-						<a href="keis.html"><button class="btn bg-none border-light text-light ms-3 text-m text"
+						<a href="zayavka.php"><button class="btn bg-light text-m text" style=" border-radius: 5px;">Отправить заявку</button></a>
+						<a href="keis.php"><button class="btn bg-none border-light text-light ms-3 text-m text"
 							style=" border-radius: 5px;">Посмотреть кейсы</button></a>
 					</div>
 				</div>

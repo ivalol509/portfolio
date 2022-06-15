@@ -13,34 +13,15 @@
 <body
 	style="background-color: rgba(18, 15, 28, 1); background-size: 100vw auto; background-repeat: no-repeat;">
 	<div class="container">
-		<div class="row">
-			<div class="col-8 mx-auto">
-				<div class="row">
-					<div class="col-2 d-flex me-2 h-9" style="align-items: center">
-						<img src="img/logo.svg" class="col-8">
-					</div>
-					<div class="col-4 d-flex me-3 h-9" style="align-items: center;">
-						<a href="" class="text-light mx-auto text-m text">Главная</a>
-						<a href="" class="text-light mx-auto text-m text">Услуги</a>
-						<a href="" class="text-light mx-auto text-m text">Кейсы</a>
-						<a href="" class="text-light mx-auto text-m text">О нас</a>
-					</div>
-					<div class="col-5 d-flex ms-5 h-9" style="align-items: center;">
-						<img src="img/logos_whatsapp.svg" style="height: 2.2vh;">
-						<img src="img/logos_telegram.svg" class="ms-1" style="height: 2.2vh;">
-						<a href="" class="text-light ms-1 text-m text">+7 (984) 104-11-05</a>
-						<button class="btn bg-light ms-3 text-m text" style="border-radius: 5px;">Отправить
-							заявку</button>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php
+			include 'header.php';
+		?>
 
 		<div class="row panel mt-5">
 			<div class="col-8 mx-auto h-100">
 				<div class="row">
 					<div class="col-12">
-						<a href="index.html" class="text fs-20" style="color: rgba(255, 255, 255, 0.6);">Главная / </a><a href="" class="text-light text fs-20">Кейсы</a>
+						<a href="index.php" class="text fs-20" style="color: rgba(255, 255, 255, 0.6);">Главная / </a><a href="" class="text-light text fs-20">Кейсы</a>
 					</div>
 					<div class="col">
 						<div class="row">
