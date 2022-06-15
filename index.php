@@ -190,7 +190,7 @@
 							</div>
 						</div>
 						<div class="row mt-4">
-							<a href="keis.html"><button class="btn bg-none border-light text-light text-m text w-100"
+							<a href="keis.php"><button class="btn bg-none border-light text-light text-m text w-100"
 								style=" border-radius: 5px;">Остальные работы</button></a>
 						</div>
 					</div>
@@ -202,8 +202,7 @@
 		<div class="row panel">
 			<div class="col-8 mx-auto">
 				<div class="row mt-3">
-					<h1 class="text-light"
-						style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
+					<h1 class="text-light" style="font-family: inter-b; font-size: 40px; line-height: 74px;width: max-content; height: max-content;">
 						О нас</h1>
 				</div>
 				<div class="row h-75">
@@ -343,7 +342,7 @@
 										вопросы — мы скоро ответим</p>
 								</div>
 								<div class="row text-center">
-									<a href="zayavka.html"><button class="btn bg-light text-m text w-25 mx-auto"
+									<a href="zayavka.php"><button class="btn bg-light text-m text w-25 mx-auto"
 										style=" border-radius: 5px;">Отправить заявку</button></a>
 								</div>
 							</div>

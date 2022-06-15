@@ -104,7 +104,7 @@
 				</div>
 			</div>
 		</div>
-		< <!-- Связь с нами -->
+		<!-- Связь с нами -->
 			<div class="row panel">
 				<div class="col h-100">
 					<div class="row h-100">
